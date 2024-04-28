@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: initial;
+  color: #fff;
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  background-image: url(../img/skins/Poppy-Defaut.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  margin: 0 40%;
+  font-size: 84px;
+}
+
+h3 {
+  width: 200px;
+  position: absolute;
+  margin: 6% 43%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sobre {
+  position: absolute;
+  display: flex;
+  width: 500px;
+  margin: 140px 30px;
+  margin: 11% 5%;
+}
+
+.sobre > p {
+  width: 100%;
+  margin: 0 3%;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.video > iframe {
+  margin: 9% 48%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: solid 1px #eccd44;
+  border-radius: 30px 0;
+}
+
+.skills {
+  position: absolute;
+  margin: 25% 8%;
+  flex-direction: row;
+  width: 320px;
+  height: 140px;
+}
+h2 {
+  position: absolute;
+  margin: 0 35%;
+}
+
+.skills ul {
+  margin: 25% 2%;
+  position: absolute;
+  list-style: none;
+  display: flex;
+}
+
+.skills li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #eccd44;
+  border-radius: 10px;
+  margin-right: 12px;
+  transition: top 0.3s ease; /* Adicionando transição de movimento */
+}
+
+.skills li:hover {
+  top: -5px; /* Move o li para cima ao passar o mouse */
+}
+
+.legendaskll {
+  color: #ffd000;
+  font-weight: bold;
+  font-size: 8px;
+}
+.tituloskll {
+  font-weight: bold;
+  margin-top: 13px;
+}
+.descricaoskll {
+  margin-top: 5px;
+  color: #fff;
+}
+
+.skills .card {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 283px;
+  padding: 10px;
+  color: #000;
+  border-radius: 0 0 50px;
+  z-index: 1;
+
+  background: rgba(255, 208, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.skills li:hover .card {
+  display: block;
+}
+
+.skills span {
+  position: absolute;
+  top: -30px; /* Posiciona a label acima da li */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Corrige a centralização */
+  color: #eccd44;
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+.skills .pasiva {
+  background-image: url(../img/skills/passiva.jpg);
+  background-size: cover;
+}
+.pasiva:hover span {
+  opacity: 0;
+}
+.q:hover span {
+  opacity: 0;
+}
+.w:hover span {
+  opacity: 0;
+}
+.e:hover span {
+  opacity: 0;
+}
+.r:hover span {
+  opacity: 0;
+}
+.skills .q {
+  background-image: url(../img/skills/q.jpg);
+  background-size: cover;
+}
+
+.skills .w {
+  background-image: url(../img/skills/w.jpg);
+  background-size: cover;
+}
+
+.skills .e {
+  background-image: url(../img/skills/e.jpg);
+  background-size: cover;
+}
+
+.skills .r {
+  background-image: url(../img/skills/r.jpg);
+  background-size: cover;
+}
+/*
+.skins-container {
+  position: absolute;
+  width: 98vw;
+  border: #eccd44 solid 1px;
+  margin-left: 15px;
+  margin-top: 35%;
+}
+*/
+
+.skins{
+  border: #eccd44 solid 1px;
+  width: 80vw;
+  height:  26vh;
+  display: flex;
+}
+
+.skins li{
+  border: #ffd000 solid 1px;
+  cursor: pointer;
+  margin-left: 3px;
+  background-image: url(../img/skins/Poppy-Defaut.jpg);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  width: 390px;
+  height: 100%;
+}

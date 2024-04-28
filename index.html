@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>POPPY</title>
+</head>
+
+<body>
+    <section class="main">
+        <h1>POPPY</h1>
+        <h3>A Guardian do Matelo</h3>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dh6y_LnAxXo" frameborder="0"
+                allowfullscreen="true"></iframe>
+        </div>
+        <div class="sobre">
+            <p>Runeterra não está em falta de campeões valentes, mas poucos são tão tenazes quanto Poppy.
+                Carregando o lendário martelo de Orlon, uma arma que tem o dobro de seu tamanho, essa yordle determinada
+                tem passado muitos anos procurando em segredo pelo lendário “Herói de Demacia”, dono legítimo do
+                martelo. Até lá,
+                ela cumpre seu dever entrando em batalhas e forçando os inimigos do reino a recuarem com cada giro de
+                seu martelo.</p>
+        </div>
+        <div class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li class="pasiva">
+                    <span>PASIVA</span>
+                    <div class="card">
+                        <p class="legendaskll">PASSIVA</p>
+                        <P class="tituloskll">EMBAIXADORA DE FERRO</P>
+                        <p class="descricaoskll">
+                            Poppy arremessa seu broquel, que bate no alvo e cai no chão. Ela pode apanhá-lo para receber um escudo temporário.</p>
+                    </div>
+                </li>
+                <li class="q">
+                    <span>Q</span>
+                    <div class="card">
+                        <p class="legendaskll">Q</p>
+                        <P class="tituloskll">CHOQUE DO MARTELO</P>
+                        <p class="descricaoskll">
+                            Poppy golpeia com o martelo, causando dano e criando uma área que reduz a velocidade de inimigos e explode após um intervalo.
+                        </p>
+                    </div>
+                </li>
+                <li class="w">
+                    <span>W</span>
+                    <div class="card">
+                        <p class="legendaskll">W</p>
+                        <P class="tituloskll">PRESENÇA INABALÁVEL</P>
+                        <p class="descricaoskll">
+                            Poppy recebe Armadura e Resistência Mágica passivamente, que aumentam quando ela estiver com Vida baixa. Ela pode ativar Presença 
+                            Inabalável para receber Velocidade de Movimento e impedir avanços inimigos ao seu redor, fazendo com que o inimigo impedido sofra 
+                            redução de velocidade e fique preso ao chão.
+                        </p>
+                    </div>
+                </li>
+                <li class="e">
+                    <span>E</span>
+                    <div class="card">
+                        <p class="legendaskll">E</p>
+                        <P class="tituloskll">INVESTIDA HEROICA</P>
+                        <p class="descricaoskll">
+                            Poppy avança até o alvo e o empurra para trás. Se o alvo colidir com uma parede, ele será atordoado.
+                        </p>
+                    </div>
+                </li>
+                <li class="r">
+                    <span>R</span>
+                    <div class="card">
+                        <p class="legendaskll">R</p>
+                        <P class="tituloskll">VEREDITO DA GUARDIÃ</P>
+                        <p class="descricaoskll">
+                            Poppy canaliza um golpe com o martelo que empurra inimigos para muito longe.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+        <div class="skins-container">
+            <ul class="skins" id="skins-list">
+                
+            </ul>
+        </div>      
+    </section>
+
+
+    <script>
+        const skinsList = document.getElementById('skins-list');
+        for (let i = 0; i <= 11; i++) {
+            const li = document.createElement('li');
+            li.className = `skin-${i}`;
+            skinsList.appendChild(li);
+        }
+    </script>  
+</body>
+
+</html>
