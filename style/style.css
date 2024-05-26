@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-  background-image: url(../img/skins/Poppy-Defaut.jpg);
+  background: #444;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -175,32 +175,52 @@ h2 {
   background-image: url(../img/skills/r.jpg);
   background-size: cover;
 }
-/*
 .skins-container {
   position: absolute;
-  width: 98vw;
+  width: 500px;
+  height: 250px;
   border: #eccd44 solid 1px;
-  margin-left: 15px;
-  margin-top: 35%;
+  top: 50px;
+  overflow: hidden;
 }
-*/
-
-.skins{
-  border: #eccd44 solid 1px;
-  width: 80vw;
-  height:  26vh;
-  display: flex;
-}
-
-.skins li{
-  border: #ffd000 solid 1px;
-  cursor: pointer;
-  margin-left: 3px;
-  background-image: url(../img/skins/Poppy-Defaut.jpg);
+.skin{
+  width: 180px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #505050;
+  background-position: 50% 50%;
   background-size: cover;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  width: 390px;
-  height: 100%;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.skins-container .skin:nth-child(3){
+    left: 40%;
+}
+.skins-container .skin:nth-child(4){
+    left: calc(40% + 220px);
+}
+.skins-container .skin:nth-child(5){
+    left: calc(40% + 440px);
+}
+
+.skins-container .skin:nth-child(n + 6){
+    left: calc(40% + 660px);
+    opacity: 0;
+}
+.skins-container .skin:nth-child(2) .content{
+  display: block;
 }
