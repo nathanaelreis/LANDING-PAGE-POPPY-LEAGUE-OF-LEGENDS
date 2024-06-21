@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
 }
-.video{
+.video iframe{
   width: 25vw;
   height: 30vh;
 
