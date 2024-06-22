@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: #949494;
+}
 .main{
   width: 100vw;
 
@@ -17,9 +19,6 @@
   color: aliceblue;
 }
 
-#elemento{
-  border: solid 1px #c7cc3b;
-}
 .title{
   margin-top: 2%;
 
@@ -42,7 +41,49 @@
   width: 25vw;
 
   position: absolute;
-  margin:15%;
+  margin-top: -18%;
+  margin-left: 10%;
 
-  font-size: 26px;
+  font-size: 24px;
+}
+
+.skills{
+  display: flex;
+  margin: auto;
+  width: 95%;
+  height: 230px;
+  
+  border: solid 1px #c7cc3b;
+  
+  overflow: hidden;
+}
+.skills h2{
+  position: relative;
+  margin-top: 2px;
+  margin-left: 45%;
+}
+.skills ul{
+  display:flex;
+  align-items: center;
+
+  position: relative;
+
+  list-style: none;
+
+}
+.skills ul li{
+  width: 50px;
+  height: 50px;
+  margin-left: 23px;
+
+  border-radius: 10px;
+  border: solid 1px #c7cc3b;
+  overflow: hidden;
+}
+.skills ul li span{
+  width: 50px;
+  height: 50px;
+}
+.card{
+  border: solid 1px #f70000;
 }
