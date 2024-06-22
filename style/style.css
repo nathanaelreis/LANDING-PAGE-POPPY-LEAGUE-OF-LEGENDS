@@ -49,7 +49,9 @@ body{
 
 .skills{
   display: flex;
+  flex-direction: column;
   margin: auto;
+
   width: 95%;
   height: 230px;
   
@@ -64,7 +66,9 @@ body{
 }
 .skills ul{
   display:flex;
+  margin: auto;
   align-items: center;
+  justify-content: center;
 
   position: relative;
 
@@ -81,9 +85,11 @@ body{
   overflow: hidden;
 }
 .skills ul li span{
-  width: 50px;
-  height: 50px;
+  position: relative;
+
+  background: #555;
 }
 .card{
+  margin-top: 50px;
   border: solid 1px #f70000;
 }
