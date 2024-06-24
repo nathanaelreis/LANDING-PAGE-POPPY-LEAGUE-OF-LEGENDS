@@ -22,6 +22,10 @@ header{
   background: #888;
 }
 
+header img{
+  height: 6vh;
+}
+
 ul{
 
   width: 60%;
@@ -45,6 +49,25 @@ ul li a{
 
   position: absolute;
   top: 8vh;
+}
+
+.slide{
+  display: flex;
+  position: absolute;
+
+  bottom: 1px;
+
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+.slide img{
+  width: 15vw;
+  height: 15vh;
+  margin-left: 2%;
+  border-radius: 50px 0 50px;
 }
 
 .modelo-3d{
