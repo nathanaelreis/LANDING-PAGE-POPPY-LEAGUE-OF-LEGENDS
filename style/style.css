@@ -78,6 +78,10 @@ ul li a{
   top: 8vh;
   left: 25vw;
 }
+.modelo-3d img{
+  width: 100%;
+  height: 100%;
+}
 
 .specs{
   background: #64c22e;
