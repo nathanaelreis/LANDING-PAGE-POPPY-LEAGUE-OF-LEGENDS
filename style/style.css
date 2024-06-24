@@ -3,93 +3,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
-  background-color: #949494;
-}
-.main{
   width: 100vw;
-
-  overflow-x: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  text-shadow: #c7cc3b 2px 2px 4px;
-  color: aliceblue;
-}
-
-.title{
-  margin-top: 2%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.video iframe{
-  width: 25vw;
-  height: 30vh;
-
-  margin: 10% 70%;
-  padding: 5px;
-
-  border-radius: 0 50px;
+  height: 100vh;
   overflow: hidden;
+  display: flex;
 }
-.sobre{
+
+header{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  background: #888;
+}
+
+ul{
+
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+  margin: auto;
+
+}
+
+ul li a{
+  margin-left: 23px;
+
+}
+
+.main{
+  background: #d35757;
+  height: 92vh;
   width: 25vw;
 
   position: absolute;
-  margin-top: -18%;
-  margin-left: 10%;
-
-  font-size: 24px;
+  top: 8vh;
 }
 
-.skills{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-
-  width: 95%;
-  height: 230px;
-  
-  border: solid 1px #c7cc3b;
-  
-  overflow: hidden;
+.modelo-3d{
+  background-color: #3d6bb1;
+  width: 50vw;
+  height: 92vh;
+  position: absolute;
+  top: 8vh;
+  left: 25vw;
 }
-.skills h2{
-  position: relative;
-  margin-top: 2px;
-  margin-left: 45%;
+
+.specs{
+  background: #64c22e;
+  width: 25vw;
+  height: 92vh;
+  position: absolute;
+  top: 8vh;
+  left: 75vw;
 }
-.skills ul{
-  display:flex;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
 
-  position: relative;
-
-  list-style: none;
-
-}
-.skills ul li{
-  width: 50px;
-  height: 50px;
-  margin-left: 23px;
-
-  border-radius: 10px;
-  border: solid 1px #c7cc3b;
-  overflow: hidden;
-}
-.skills ul li span{
-  position: relative;
-
-  background: #555;
-}
-.card{
-  margin-top: 50px;
-  border: solid 1px #f70000;
+.specs video{
+  width: 200px;
 }
