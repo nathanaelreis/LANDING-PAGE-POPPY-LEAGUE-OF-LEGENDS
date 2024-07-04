@@ -95,3 +95,12 @@ ul li a{
 .specs video{
   width: 200px;
 }
+
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width:480px) {
+  
+
+}
