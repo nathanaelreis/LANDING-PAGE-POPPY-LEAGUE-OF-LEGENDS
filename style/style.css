@@ -16,7 +16,6 @@ header{
   height: 8vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   position: absolute;
   background: #888;
@@ -24,6 +23,7 @@ header{
 
 header img{
   height: 6vh;
+  margin-left: 3%;
 }
 
 ul{
